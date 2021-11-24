@@ -1,0 +1,20 @@
+*{
+    font-family:roboto;
+}
+h1{
+    background-color:red;
+    color:white;
+    padding:15px;
+}
+label{
+    font-size:25px;
+    padding:30px;
+}
+input{
+    padding:10px;
+    margin-top:10px;
+}
+.form-group{
+    margin-top:-25px;
+    margin-left:200px;
+}
