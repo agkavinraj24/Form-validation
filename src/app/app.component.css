@@ -13,8 +13,51 @@ label{
 input{
     padding:10px;
     margin-top:10px;
+    border-radius: 5px;
 }
 .form-group{
     margin-top:-25px;
-    margin-left:200px;
+    margin-left:150px;
+}
+button{
+    padding:10px;
+    margin-left:150px;
+    margin-top:15px;
+    border-radius:5px;
+    outline:transparent;
+}
+.country_input{
+    margin-left: -12px;
+}
+.city_input{
+    margin-left:31px;
+}
+.age_input{
+    margin-left:30px;
+}
+.name_input{
+    margin-left:8px;
+}
+
+@media screen and (max-width: 320px){
+.name_input{
+    margin-left: 28px;
+}
+.age_input{
+    margin-left: 28px ;
+}
+.country_input{
+    margin-left: 28px;
+}
+.form-group{
+    margin-left:120px;
+}
+.submit_button{
+    margin-left: 120px;
+    outline:transparent;
+}
+input{
+    border-radius:16px;
+    outline: none;
+}
 }

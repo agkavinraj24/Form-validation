@@ -12,7 +12,7 @@ export class AppComponent implements OnInit
 showAge=false;
   ngOnInit() {
   this.exform = new FormGroup({
-    'name' : new FormControl(null, Validators.required),
+    'name' : new FormControl(null, [Validators.required,Validators.minLength(3),Validators.maxLength(50),Validators.pattern("[a-zA-Z][a-zA-Z ]+")]),
     'gender':  new FormControl(null,Validators.required),
     'country' : new FormControl(null, Validators.required),
     'city' : new FormControl(null, Validators.required),    

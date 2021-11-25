@@ -1,15 +1,12 @@
-
-<div>
-  <div>
       <div>
         <h1>Example Form</h1>
           <form [formGroup]="exform">
               <div>
                 <label>Name:</label>
-                <input formControlName="name" type="text">
-                <small *ngIf="name.invalid && name.touched">Name is Required</small> 
+                <input formControlName="name" type="text" class="name_input" placeholder="Enter The Name">
+                <small *ngIf="name.invalid && name.touched" >Name is Required</small> 
               </div>
-              <label>Gender:</label>
+              <label>Gender:</label> <br>
               <div class="form-group">
                   <div>
                       <input type="radio" formControlName="gender"  name="fav_language" value="Male">Male<br>                  
@@ -23,21 +20,19 @@
               </div>
               <div>
                   <label>Country:</label>
-                  <input formControlName="country" type="text">
+                  <input formControlName="country" type="text" class="country_input"  placeholder="Enter Country Name">
                   <small *ngIf="country.invalid && country.touched">country is Required</small> 
               </div>
               <div>
                   <label>City:</label>
-                  <input formControlName="city" type="text">
+                  <input formControlName="city" type="text" class="city_input" placeholder="Enter City Name">
                   <small *ngIf="city.invalid && city.touched">city is Required</small>
               </div>
               <div *ngIf="showAge" >
-                  <label class="col-form-label">Age:</label>
-                  <input formControlName="age" type="text">
+                  <label>Age:</label>
+                  <input formControlName="age" type="text" class="age_input"  placeholder="Enter the Age">
                   <small *ngIf="age.invalid && age.touched">Age is Required</small> 
               </div>
-              <button (click)="clicksub()" [disabled]="exform.invalid" type="button">Submit</button>
+              <button (click)="clicksub()" [disabled]="exform.invalid" type="button" class="submit_button">Submit</button>
             </form>
       </div>
-  </div>
-</div>
